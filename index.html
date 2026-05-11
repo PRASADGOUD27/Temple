@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>గంజికుంట శ్రీ రామాలయం</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f5f5f5;
+        }
+
+        /* Navbar */
+
+        nav{
+            background:#d62828;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+        }
+
+        nav h1{
+            color:white;
+            font-size:24px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:20px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:yellow;
+        }
+
+        /* Hero Section */
+
+        .hero{
+            height:90vh;
+            background:url('WhatsApp Image 2026-05-11 at 9.42.20 AM.jpeg') center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .hero-content{
+            background:rgba(0,0,0,0.6);
+            padding:40px;
+            border-radius:10px;
+        }
+
+        .hero h2{
+            font-size:50px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:22px;
+        }
+
+        .donate-btn{
+            margin-top:25px;
+            padding:15px 30px;
+            border:none;
+            background:#ffb703;
+            color:black;
+            font-size:20px;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        /* Sections */
+
+        section{
+            padding:60px 10%;
+            background:white;
+            margin:20px;
+            border-radius:10px;
+        }
+
+        section h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#d62828;
+            font-size:35px;
+        }
+
+        section p{
+            font-size:20px;
+            line-height:1.8;
+        }
+
+        /* Photos */
+
+        .photos{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .photos img{
+            width:100%;
+            border-radius:10px;
+            height:250px;
+            object-fit:cover;
+        }
+
+        /* Instagram */
+
+        .instagram-box{
+            text-align:center;
+        }
+
+        .instagram-btn{
+            display:inline-block;
+            margin-top:20px;
+            background:#833ab4;
+            color:white;
+            padding:15px 30px;
+            text-decoration:none;
+            border-radius:8px;
+            font-size:20px;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero h2{
+                font-size:35px;
+            }
+
+            .hero p{
+                font-size:18px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h1>శ్రీ రామాలయం</h1>
+
+        <ul>
+            <li><a href="#home">హోమ్</a></li>
+            <li><a href="#about">గుడి సమాచారం</a></li>
+            <li><a href="#photos">ఫోటోలు</a></li>
+            <li><a href="#updates">అప్డేట్స్</a></li>
+            <li><a href="#contact">సంప్రదించండి</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Home Page -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h2>గంజికుంట గ్రామ శ్రీ రామాలయం</h2>
+
+            <p>
+                మైదుకూరు మండలం, కడప జిల్లా
+            </p>
+
+            <button class="donate-btn" onclick="donateNow()">
+                సహాయం చేయండి 🙏
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <h2>మా రామాలయం గురించి</h2>
+
+        <p>
+            మా గ్రామం గంజికుంట, మైదుకూరు మండలం, కడప జిల్లాలో ఉన్న ఒక చిన్న గ్రామము.
+            మా గ్రామంలో సుమారు 40 నుండి 45 ఇళ్లు మాత్రమే ఉన్నాయి.
+        </p>
+
+        <br>
+
+        <p>
+            మా గ్రామ ప్రజల కోరికతో శ్రీ రామాలయం నిర్మాణం చేపట్టాము.
+            అయితే చిన్న గ్రామం కావడం వల్ల ఆలయ నిర్మాణానికి కావలసిన నిధులు సరిపోవడం లేదు.
+        </p>
+
+        <br>
+
+        <p>
+            అందువల్ల మా బంధువులు, స్నేహితులు మరియు దాతలందరిని
+            సహాయం చేయమని వినమ్రంగా కోరుతున్నాము.
+        </p>
+
+    </section>
+
+    <!-- Photos Section -->
+
+    <section id="photos">
+
+        <h2>రామాలయం ఫోటోలు</h2>
+
+        <div class="photos">
+
+            <img src="WhatsApp Image 2026-05-11 at 9.42.20 AM.jpeg" alt="Temple">
+
+            <img src="WhatsApp Image 2026-05-11 at 11.19.01 AM.jpeg" alt="Temple">
+
+            <img src="WhatsApp Image 2026-05-11 at 11.10.36 AM.jpeg" alt="Temple">
+
+        </div>
+
+    </section>
+
+    <!-- Updates Section -->
+
+    <section id="updates">
+
+        <h2>ఇన్‌స్టాగ్రామ్ అప్డేట్స్</h2>
+
+        <div class="instagram-box">
+
+            <p>
+                మా రామాలయం నిర్మాణ పనుల తాజా అప్డేట్స్ కోసం మా Instagram పేజీని ఫాలో అవ్వండి.
+            </p>
+
+            <a href="https://www.instagram.com/ganjikunta_updates?igsh=MXd1bmpuczBqdXYyZg=="
+               target="_blank"
+               class="instagram-btn">
+
+               Instagram చూడండి
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>సంప్రదించండి</h2>
+
+        <p>
+            గ్రామం: గంజికుంట గ్రామము
+        </p>
+
+        <br>
+
+        <p>
+            మండలం: మైదుకూరు మండలం
+        </p>
+
+        <br>
+
+        <p>
+            జిల్లా: కడప జిల్లా
+        </p>
+
+        <br>
+
+        <p>
+            ఫోన్: +91 
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            శ్రీ రామ జయమ్ 🙏
+        </p>
+
+    </footer>
+
+    <script>
+
+        function donateNow(){
+
+            alert("త్వరలో UPI Payment సదుపాయం అందుబాటులోకి వస్తుంది 🙏");
+
+        }
+
+    </script>
+
+</body>
+</html>
